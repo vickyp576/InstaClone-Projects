@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+#postview-container {
+  margin: 30px auto;
+  width: 600px;
+  min-height: 200px;
+  box-shadow: 1px 1px 20px 10px gainsboro;
+}
+
+#postview-container #head-container {
+  height: 40px;
+  padding: 0 50px;
+  border-bottom: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#postview-container #head-container #left-section {
+  display: flex;
+  align-items: center;
+}
+
+#postview-container #head-container #left-section h2 {
+  margin: 0;
+  padding: 0;
+  color: green;
+}
+
+#postview-container #head-container #left-section #img-container {
+  width: 20px;
+  height: 20px;
+}
+
+#postview-container #head-container #right-section #img-container {
+  width: 20px;
+  height: 20px;
+}
+
+#img-container img {
+  max-width: 100%;
+  background: none;
+}
+
+#postview-container #posts {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-container {
+  margin-top: 15px ;
+  width: 250px;
+  min-height: 250px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.post-container .post-header {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-container .post-header p {
+  margin: 0;
+  line-height: 10px;
+}
+
+.post-container .post-header p .name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-container .post-header p .place {
+  font-size: 12px;
+  color: grey;
+}
+
+.post-container .post-header p .dot {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.post-container .post-img {
+  background-color: gainsboro;
+  text-align: center;
+  width: 100%;
+  height : 150px;
+  overflow: hidden;
+}
+
+.post-container .post-img img {
+  max-height: 100%;
+}
+
+.post-footer .like-share-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.post-footer .like-share-container .like-share-button {
+  display: flex;
+}
+
+.post-footer .like-share-container .img-container {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.post-footer .like-share-container .img-container img {
+  max-width: 100%;
+}
+
+.post-footer .like-share-container .date {
+  font-size: 12px;
+  color: rgb(61, 61, 61);
+}
+
+.post-footer .like {
+  font-size: 10px;
+  color: grey;
+  padding-left: 10px;
+}
+
+.post-footer .description {
+  margin: 0;
+  font-size: 14px;
+  padding: 5px 10px 10px;
+  font-weight: bold;
+}
+
+#home-page {
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+  box-shadow: 1px 1px 20px 10px gainsboro;
+}
+
+#home-img {
+    width: 50%;
+}
+
+#home-img img {
+    max-width: 100%;
+}
+
+#home-button{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+#home-button button {
+    background: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    color: green;
+}
+
+.new-post-form {
+  width: 80%; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 2px grey;
+}
+
+.new-post-form .row-1 input,
+.new-post-form .row-2 input,
+.new-post-form .row-3 input {
+  height: 30px;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.new-post-form input:hover {
+  box-shadow: 1px 1px 5px green;
+}
+
+.new-post-form input:focus {
+  box-shadow: 1px 1px 5px green;
+}
+
+.new-post-form input::placeholder {
+  padding-left: 10px;
+}
+
+.new-post-form .input-field {
+  margin-bottom: 15px;
+}
+
+.new-post-form .input-field input[type="file"] {
+  border: 1px solid gray;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.new-post-form .input-field.row-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-post-form .input-field.row-2 #description{
+  width: 100%;
+}
+
+.new-post-form .input-field.row-3{
+  display: flex;
+  justify-content: center;
+}
+
+.new-post-form .input-field #post-btn {
+  font-weight: bold;
+  padding: 10px 50px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: green;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.new-post-form .input-field #post-btn:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+#preview-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#preview-img-container {
+  width: 70%;
+  padding: 10px;
+  max-height: 150px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+#preview-img-container img {
+  max-height: 100%;
+}
+
+#loader-preview {
+  display: flex;
+  justify-content: center;
+}
+
+#loader-container {
+  width: 60%;
+  height: 15px;
+  background: green;
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#loader-container #loader {
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  transform: skewX(35deg);
+  position: absolute;
+  animation: loader 3s linear infinite;
+}
+
+@keyframes loader {
+  0% {left : 0}
+  100% {left : 100%}
+}
